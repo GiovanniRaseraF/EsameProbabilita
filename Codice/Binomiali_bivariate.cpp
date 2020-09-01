@@ -31,6 +31,14 @@ void pln(double s) {
 }
 
 int main() {
-	system("xdg-open https://www.wolframalpha.com/input/?i=%281-e%5E2%29");
+	string derivataprima = "xdg-open https://www.wolframalpha.com/input/?i=D(D(e^(2*(4e^(t)-4))))";
+	cout << derivataprima << endl;
+	string d{};
+	for (auto c : derivataprima) {
+		if (c == '(') d += "%28";
+		else if (c == ')') d += "%29";
+		else d += c;
+	}
+	system(d.c_str());
 	return 0;
 }
