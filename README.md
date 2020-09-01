@@ -1,15 +1,15 @@
 ## Esame di Probabilità (Secondo anno di informatica Udine)
-Codice per risolvere gli esercizi dell'esame di probabilità del secondo anno di informatica a Udine
-La risoluzione degli esercizi è basata sul PDF creato da [Magoga Francesco](), Versione 1.6
-Consiglio di leggere attentamente i passaggi che segue Francesco siccome le spiegazioni sono veramente molto 
+- Codice per risolvere gli esercizi dell'esame di probabilità del secondo anno di informatica a Udine.
+- La risoluzione degli esercizi è basata sul PDF creato da [Magoga Francesco](), Versione 1.6.
+- Consiglio di leggere attentamente i passaggi che segue Francesco siccome le spiegazioni sono veramente molto 
 dettagliate.
-I miei programmi devono servire solamente a verificare di aver fatto i calcoli giusti.
-Non mi prendo nessuna responsabilità se venissero utilizzati per copiare.
+- I miei programmi devono servire solamente a verificare di aver fatto i calcoli giusti.
+- Non mi prendo nessuna responsabilità se venissero utilizzati per copiare.
 
 # Importante
-- Mi scuso per gli errori di ortografia e di logica che molto probabilmente avrò commesso e per l'implemetazione, spesso sbrigativa, che ho dato
+- Mi scuso per gli errori di ortografia e di logica che molto probabilmente avrò commesso e per l'implemetazione, spesso sbrigativa, che ho dato.
 - Spero che questo progetto non sia fine a se stesso, ma sia un modo per far piacere questa materia anche a noi informatici a cui non interessa proprio nulla dell'argomento.
-- Lascio a voi l'implemetazione/migliorameto/ottimizzazione in altri linguaggi (SE LO FATE IN SCHEME VI OFFRO UN CAFFE')
+- Lascio a voi l'implemetazione/migliorameto/ottimizzazione in altri linguaggi. (SE LO FATE IN SCHEME VI OFFRO UN CAFFE')
 
 # Autore
 - Giovanni Rasera
