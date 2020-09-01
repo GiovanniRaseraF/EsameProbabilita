@@ -9,28 +9,8 @@
 
 using namespace std;
 
-int fac(int val) {
-	int res = val + 1, f = 1;
-	while (res-- > 1) f *= res;
-	return f;
-}
-
-int bin(int n, int k) { return (int)(fac(n) / (fac(k) * fac(n - k))); }
-
-void p(const char* s) {
-	cout << s;
-}
-void pln(const char* s) {
-	cout << s << endl;
-}
-void p(double s) {
-	cout << s;
-}
-void pln(double s) {
-	cout << s << endl;
-}
-
 int main() {
-	
+	cout << "Funzione generatrice dei momenti"<<endl;
+	system("xdg-open https://www.wolframalpha.com/input/?i=%281-e%5E2%29");
 	return 0;
 }

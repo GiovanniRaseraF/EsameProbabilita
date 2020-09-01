@@ -16,7 +16,7 @@ using namespace std;
 
 	int bin(int n, int k) { return (int)(fac(n) / (fac(k) * fac(n - k))); }
 
-	int mainn() {
+	int main() {
 		cout << "ES: Urna e Palline:\n";
 		//Dati
 		int N1 = 0, B1 = 0, N2 = 0, B2 = 0, N3 = 0, B3 = 0, N4 = 0, B4 = 0;
