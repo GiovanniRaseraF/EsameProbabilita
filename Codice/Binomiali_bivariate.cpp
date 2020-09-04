@@ -31,6 +31,10 @@ void pln(double s) {
 }
 
 int main() {
+
+
+
+
 	string derivataprima = "xdg-open https://www.wolframalpha.com/input/?i=D(D(e^(2*(4e^(t)-4))))";
 	cout << derivataprima << endl;
 	string d{};
