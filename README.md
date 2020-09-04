@@ -9,7 +9,7 @@ dettagliate.
 # Importante
 - Mi scuso per gli errori di ortografia e di logica che molto probabilmente avrò commesso e per l'implemetazione, spesso sbrigativa, che ho dato.
 - Spero che questo progetto non sia fine a se stesso, ma sia un modo per far piacere questa materia anche a noi informatici a cui non interessa proprio nulla dell'argomento.
-- Lascio a voi l'implemetazione/migliorameto/ottimizzazione in altri linguaggi. (SE LO FATE IN SCHEME VI OFFRO UN CAFFE')
+- Lascio a voi l'implemetazione/miglioramento/ottimizzazione in altri linguaggi. (SE LO FATE IN SCHEME VI OFFRO UN CAFFE')
 
 # Autore
 - Giovanni Rasera
