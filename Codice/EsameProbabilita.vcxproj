@@ -144,6 +144,12 @@
     <ClCompile Include="FunzioneGeneraledeiMomenti.cpp" />
     <ClCompile Include="Resistenze.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="rapidcsv.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="tavola_normale.csv" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
