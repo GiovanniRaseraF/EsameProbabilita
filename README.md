@@ -14,6 +14,12 @@ dettagliate.
 # Autore
 - Giovanni Rasera
 
+# Grazie
+- Magoga Francesco
+- https://github.com/d99kris/rapidcsv       Miglior libreria per il parsing dei csv
+- https://github.com/d99kris
+- Cremonini Cesare
+
 # Prerequisiti
 - Linux(VM, WLS, Native)                                    .. Testato su Ubuntu WSL
 - Compilatore C++(g++, clang, visualstudio, Cygwin, MinGW)  .. Testato con  g++ -std=c++17
