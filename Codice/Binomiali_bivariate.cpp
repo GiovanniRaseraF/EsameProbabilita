@@ -35,8 +35,34 @@ double trova(double zd) {
 	return estrazioneTavola;
 }
 
+//Trova Z dato p
+double a_tetha(double p) {
+	double differenza = p;
+	double valore = 0;
+	string colonna = "", riga = "";
+	for (int i = 0; i < 10; i++) {
+		string column = "0.0"+to_string(i);
+		vector<double> col = doc.GetColumn<double>(column);
+		int iter = 0;
+		for (double val : col) {
+			if (abs(p - val) < differenza) {
+				differenza = abs(p - val);
+				valore = val;
+				riga = doc.GetRowName(iter);
+				colonna = column;
+			}
+			iter++;
+		}
+	}
+	//Stampa
+	cout << "Estrazione della Z\n";
+	cout << "Colonna: "<<colonna << "\nRiga: " << riga<<endl;
+	cout << "//////////////////\n";
+
+	return stod(colonna) + stod(riga);
+}
+
 int main() {
-	
 	//Inserimento dei dati
 	double u = 0, a2 = 0, n = 0, A = 0, B = 0;
 	//Inserimento di u e a2
@@ -80,6 +106,14 @@ int main() {
 
 	double PYnB = sigma;
 	cout << "P(Y" << n << " < " << B << ")= "; cout << PYnB << endl;
+
+	//Calcolo dei percentili
+	double val = 0;
+	cout << "Inserisci il percentile = val/100:\n";
+	cout << "val: "; cin >> val;
+	val /= 100;
+	double tp = u + a * (-a_tetha(val));
+	cout << "tp = " << tp<<endl;
 	
 	return 0;
 }
