@@ -18,7 +18,10 @@ int fac(int val) {
 int bin(int n, int k) { return (int)(fac(n) / (fac(k) * fac(n - k))); }
 
 int main() {
-	//Vc continue e funzioni di ripartizione
+	//Variabili Bivariate e Binomiali
+    cout<<"Variabili bivariate e binomiali"<<endl;
+    cout<<(bin(1,0)*(1.0-1.0/4.0))<<endl;
+    cout<<(bin(1,1)*(1.0/4.0))<<endl;
 
 
 	return 0;
