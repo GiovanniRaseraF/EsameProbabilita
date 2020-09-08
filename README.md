@@ -31,7 +31,10 @@ dettagliate.
     ```
     ```bash
     #MacOS 
+    sudo nano .bash_profile
+    #L'editor di nano verrà aperto e potrete aggiungere la riga:
     alias xdg-open="open" 
+    #Uscire con (control x) -- (^X) e premere y per salvare
     ```
     [INSTALLAZIONE DI XDG-OPEN](https://zoomadmin.com/HowToInstall/UbuntuPackage/xdg-utils)
 - Un browser compatibile con xdg-open                       .. Testato Chrome
