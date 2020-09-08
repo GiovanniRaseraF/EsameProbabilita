@@ -25,6 +25,17 @@ string pulisci(string& str) {
 	return pulita;
 }
 
+string x_alla_seconda(string& str) {
+	string ret{};
+
+	for (char c : str) {
+		if (c == 'x' || c == 'X') ret += "x^(2)";
+		else ret += c;
+	}
+
+	return ret;
+}
+
 int main() {
 	string url = "xdg-open 'https://www.wolframalpha.com/input/?i=";
 
@@ -67,7 +78,42 @@ int main() {
 	cout << "\nCalcolo dell'integrale per t";
 	cout<<endl<<integral_for_t<<endl;
 
+	//Menu delle richieste
+	cout << "\n\nMenu delle Richieste\n";
+	//Valore atteso
+	prefisso = "∫(" + to_string(a) + "," + to_string(b) + ")";
+	funzione = "(x*(" + pxx_function + "))";
+	string integral_for_valore_atteso = prefisso + funzione + "dx";
+	string integral_for_valore_atteso_clean = pulisci(integral_for_valore_atteso);
+	//Open
+	cout << "Valore atteso: E(x)= " << integral_for_valore_atteso << endl;
+	string url_valore_atteso = url + integral_for_valore_atteso_clean + "'";
+	system(url_valore_atteso.c_str());
 
+	//Varianza
+	string x2 = prefisso + x_alla_seconda(funzione) + "dx";
+	string valore_atteso_alla_2 = "(" + integral_for_valore_atteso + ")^(2)";
+	string x2_clean = pulisci(x2);
+	string valore_atteso_alla_2_clean = pulisci(valore_atteso_alla_2);
+	//Open
+	string url_x2 = url + x2_clean + "'";
+	string url_valore_atteso_alla_2 = url + valore_atteso_alla_2_clean + "'";
+	cout << "Varianza= " << x2 << " - "<< valore_atteso_alla_2 << endl;
+	system(url_x2.c_str());
+	system(url_valore_atteso_alla_2.c_str());
+
+	//Moda
+	cout << "Guarda il grafico di px(x) se è creasciente la moda è b=" << b << " altrimenti è a=" << a << endl;
+
+	//Mediana
+	prefisso = "k=("+to_string(k)+")∫(" + to_string(a) + "," + to_string(b) + ")";
+	funzione = "(" + pxx_function + ")dx=0.5";
+	string integral_mediana = prefisso + funzione;
+	string integral_mediana_clean = pulisci(integral_mediana);
+	string find_mediana = integral_mediana_clean;
+	string url_median = url + find_mediana + "'";
+	//Open
+	system(url_median.c_str());
 
 	return 0;
 }
