@@ -15,16 +15,22 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Es1.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Resistenze.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Binomiali_bivariate.cpp">
+    <ClCompile Include="FunzioneGeneraledeiMomenti.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="FunzioneGeneraledeiMomenti.cpp">
+    <ClCompile Include="VcContinueEFunzioniDiRipartizione.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VariabiliBivariate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LeggiNormali.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Palline.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,10 +38,5 @@
     <ClInclude Include="rapidcsv.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="tavola_normale.csv">
-      <Filter>Resource Files</Filter>
-    </None>
   </ItemGroup>
 </Project>

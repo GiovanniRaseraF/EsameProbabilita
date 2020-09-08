@@ -26,7 +26,7 @@ string pulisci(string& str) {
 }
 
 int main() {
-	string url = "open 'https://www.wolframalpha.com/input/?i=";
+	string url = "xdg-open 'https://www.wolframalpha.com/input/?i=";
 
 	//Vc continue e funzioni di ripartizione
 	int a = 0, b = 0;
@@ -42,12 +42,13 @@ int main() {
 	//Calcolo l'integrale definito tra a e b della funzione che mi hanno dato
 	string prefisso = "∫("+to_string(a)+","+to_string(b)+")";
 	string funzione = "("+pxx_function+")dx=1";
-	string itnegral_for_k = prefisso+funzione;
-	string itnegral_for_k_clean = (itnegral_for_k);
-	string find_k = itnegral_for_k_clean;
-
-
-	cout<<"\nCalcolo della costante:\n"<<find_k<<endl;
+	string integral_for_k = prefisso+funzione;
+	string integral_for_k_clean = pulisci(integral_for_k);
+	string find_k = integral_for_k_clean;
+	string open_url = url + integral_for_k_clean + "'";
+	//Open
+	system(open_url.c_str());
+	cout<<"\nCalcolo della costante:\n"<<integral_for_k<<endl;
 	cout<<endl<<"Inseriere l'integrale in worfram alpha"<<endl;
 	
 	//Prendere k
@@ -56,11 +57,15 @@ int main() {
 	cout<<"k: ";cin>>k;
 
 	//Esplicitazione della funzione in t
-	prefisso = "k="+to_string(k)+" ∫("+to_string(a)+", t)";
+	prefisso = "k=("+to_string(k)+")∫("+to_string(a)+",t)";
 	funzione = "("+pxx_function+")dx";
 	string integral_for_t = prefisso+funzione;
+	string integral_fot_t_clean = pulisci(integral_for_t);
+	open_url = url + integral_fot_t_clean + "'";
+	//Open
+	system(open_url.c_str());
+	cout << "\nCalcolo dell'integrale per t";
 	cout<<endl<<integral_for_t<<endl;
-
 
 
 
