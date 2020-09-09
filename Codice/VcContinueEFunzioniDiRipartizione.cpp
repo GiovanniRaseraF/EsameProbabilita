@@ -106,14 +106,16 @@ int main() {
 	cout << "Guarda il grafico di px(x) se è creasciente la moda è b=" << b << " altrimenti è a=" << a << endl;
 
 	//Mediana
-	prefisso = "k=("+to_string(k)+")∫(" + to_string(a) + "," + to_string(b) + ")";
-	funzione = "(" + pxx_function + ")dx=0.5";
+	prefisso = "∫(" + to_string(a) + ",t)";
+	funzione = "(" + pxx_function + ")dx";
 	string integral_mediana = prefisso + funzione;
 	string integral_mediana_clean = pulisci(integral_mediana);
 	string find_mediana = integral_mediana_clean;
 	string url_median = url + find_mediana + "'";
 	//Open
 	system(url_median.c_str());
+
+
 
 	return 0;
 }
