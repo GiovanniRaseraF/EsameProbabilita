@@ -7,6 +7,7 @@
 #include <vector>
 #include <tuple>
 #include <stack>
+#include "exprtk.hpp"
 using namespace std;
 
 // CPP program to evaluate a given 
