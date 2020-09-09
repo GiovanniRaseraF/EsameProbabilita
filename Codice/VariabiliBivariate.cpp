@@ -100,6 +100,7 @@ int main() {
 		}
 		y_pos++;
 	}
+
 	//Tabella
 	cout << endl << "Tabella:" << endl << "  ";
 	for (int i = 0; i <= c_x; i++) cout << i << "\t"; cout << endl;
@@ -111,6 +112,8 @@ int main() {
 		cout << endl;
 	}
 	cout << endl;
+
+
 
 	return 0;
 }

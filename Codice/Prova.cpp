@@ -81,7 +81,7 @@ int main() {
 	}
 
 	T result = expression.value();
-
 	cout << result << endl;
 
+	return 0;
 }

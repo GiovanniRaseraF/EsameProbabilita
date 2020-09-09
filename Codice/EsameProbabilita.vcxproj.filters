@@ -33,9 +33,15 @@
     <ClCompile Include="Palline.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Prova.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="rapidcsv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="exprtk.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

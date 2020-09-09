@@ -142,11 +142,13 @@
     <ClCompile Include="FunzioneGeneraledeiMomenti.cpp" />
     <ClCompile Include="LeggiNormali.cpp" />
     <ClCompile Include="Palline.cpp" />
+    <ClCompile Include="Prova.cpp" />
     <ClCompile Include="Resistenze.cpp" />
     <ClCompile Include="VariabiliBivariate.cpp" />
     <ClCompile Include="VcContinueEFunzioniDiRipartizione.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="exprtk.hpp" />
     <ClInclude Include="rapidcsv.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
