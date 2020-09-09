@@ -31,19 +31,22 @@ dettagliate.
     ```
     ```bash
     #MacOS 
+    sudo nano .bash_profile
+    #L'editor di nano verrà aperto e potrete aggiungere la riga:
     alias xdg-open="open" 
+    #Uscire con (control x) -- (^X) e premere y per salvare
     ```
     [INSTALLAZIONE DI XDG-OPEN](https://zoomadmin.com/HowToInstall/UbuntuPackage/xdg-utils)
-- Un browser compatibile con xdg-open                       .. Testato Chrome
+- Un browser compatibile con xdg-open                       .. Testato Chrome (Non fidati della versione di MacOS che da problemi)
 
 # Come utilizzare
 - Compilare il codice dell'esercizio che si desidera utilizzare
     ```bash
-    g++ NOME_FILE.cpp -o NOME_FILE.out
+    g++ NOME_FILE.cpp -o NOME_FILE.out -std=c++17
     ```
     Credo che questo sia il modo più semplice
 - Eseguire
     ```bash
-    ./NOME_FILE.cpp
+    ./NOME_FILE.out
     ```
-    Si presuppone l'utilizzo di Linux
+    Si presuppone l'utilizzo di Linux o MacOS
