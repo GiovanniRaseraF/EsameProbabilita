@@ -7,14 +7,8 @@
 #include <vector>
 #include <tuple>
 #include <stack>
-#include "exprtk.hpp"
-using namespace std;
 
-// CPP program to evaluate a given 
-// expression where tokens are  
-// separated by space. 
 using namespace std;
-
 
 string traduce(string& fun, int x) {
     string ret = "";
@@ -36,7 +30,6 @@ double bin(int n, int k) {
 	if (k == 1) return n;
 	return (fac(n) / (fac(k) * fac(n - k)));
 }
-
 
 int main() {
 	//Variabili Bivariate e Binomiali
@@ -113,7 +106,16 @@ int main() {
 	}
 	cout << endl;
 
-
-
+	//Calcolo il supporto marginale di Sy
+	cout << "Supporto Marginale: " << endl;
+	vector<double> supp_marg_y{};
+	for (int y : Sy) {
+		double somma = 0;
+		for (int x : Sx) {
+			somma += SupportoCongiunto[y][x];
+		}
+		cout << "py(" << y << ")= " << somma << endl;
+	}
+	cout << endl;
 	return 0;
 }

@@ -83,5 +83,19 @@ int main() {
 	T result = expression.value();
 	cout << result << endl;
 
+
+
+	nx_value = (double)nx+2;
+	symbol_table.add_variable("x", nx_value);
+
+	if (!parser.compile(ny, expression)) {
+		cout << "Parsing error";
+		return -1;
+	}
+
+	result = expression.value();
+	cout << result << endl;
+
+
 	return 0;
 }
